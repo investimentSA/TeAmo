@@ -1,0 +1,81 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Amor Por Ti</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="welcome-screen" class="screen active">
+    <div class="hearts-container"></div>
+    <div class="welcome-content">
+      <h1>Mi Amor Por Ti</h1>
+      <p class="typing-text"></p>
+      <button class="enter-btn">Entrar a Nuestro Mundo ❤️</button>
+    </div>
+  </div>
+
+  <main id="main-content" class="hidden">
+    <nav>
+      <button class="nav-btn active" data-section="home">Inicio</button>
+      <button class="nav-btn" data-section="gallery">Recuerdos</button>
+      <button class="nav-btn" data-section="counter">Nuestro Tiempo</button>
+      <button class="nav-btn" data-section="messages">Mensajes</button>
+    </nav>
+
+    <section id="home" class="section active">
+      <div class="love-letter">
+        <h2>Mi Querida</h2>
+        <p>Cada día a tu lado es un regalo...</p>
+        <div class="surprise-box">
+          <div class="box-lid">Click para una sorpresa</div>
+          <div class="box-content">
+            <div class="love-note">¡Te amo infinitamente! ❤️</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="memories-grid">
+        <!-- Los elementos se agregarán dinámicamente -->
+      </div>
+    </section>
+
+    <section id="counter" class="section">
+      <div class="time-together">
+        <h2>Nuestro Amor en Números</h2>
+        <div class="counter-container">
+          <div class="counter-box">
+            <span class="number" id="days">0</span>
+            <span class="label">Días</span>
+          </div>
+          <div class="counter-box">
+            <span class="number" id="hours">0</span>
+            <span class="label">Horas</span>
+          </div>
+          <div class="counter-box">
+            <span class="number" id="minutes">0</span>
+            <span class="label">Minutos</span>
+          </div>
+        </div>
+        <div class="milestone-message"></div>
+      </div>
+    </section>
+
+    <section id="messages" class="section">
+      <div class="messages-container">
+        <div class="message-form">
+          <textarea placeholder="Escribe un mensaje de amor..."></textarea>
+          <button class="send-btn">Enviar con Amor ❤️</button>
+        </div>
+        <div class="messages-wall">
+          <!-- Los mensajes se agregarán aquí -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts.js" type="module"></script>
+</body>
+</html>
